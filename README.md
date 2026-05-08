@@ -5,4 +5,4 @@ The purpose of this project was to create a phylogenetic tree from 6 samples of 
 ## Methodes
 
 ## Results
-![ALT TEXT](Rplot02 final project tree.png)
+![ALT TEXT](/Rplot02 final project tree.png)
