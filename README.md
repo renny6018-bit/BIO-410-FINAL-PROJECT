@@ -13,12 +13,12 @@ The purpose of this project was to create a phylogenetic tree from 6 samples of 
 -	This command will be run 6 times (t1 through t6).
 -	Paired-end sequencing will produce two files: _1.fq (forward reads) and _2.fq (reverse reads).
 -	Then we will get -o t1_out. This will tell MEGAHIT where to put the assembly results. It will create a folder name `t1_out`.
-- `megahit -1 sim_t1_1.fq -2 sim_t1_2.fq -o t1_out`
-- `megahit -1 sim_t2_1.fq -2 sim_t2_2.fq -o t2_out`
-- `megahit -1 sim_t3_1.fq -2 sim_t3_2.fq -o t3_out`
-- `megahit -1 sim_t4_1.fq -2 sim_t4_2.fq -o t4_out`
-- `megahit -1 sim_t5_1.fq -2 sim_t5_2.fq -o t5_out`
-- `megahit -1 sim_t6_1.fq -2 sim_t6_2.fq -o t6_out`
+1. `megahit -1 sim_t1_1.fq -2 sim_t1_2.fq -o t1_out`
+2. `megahit -1 sim_t2_1.fq -2 sim_t2_2.fq -o t2_out`
+3. `megahit -1 sim_t3_1.fq -2 sim_t3_2.fq -o t3_out`
+4. `megahit -1 sim_t4_1.fq -2 sim_t4_2.fq -o t4_out`
+5. `megahit -1 sim_t5_1.fq -2 sim_t5_2.fq -o t5_out`
+6. `megahit -1 sim_t6_1.fq -2 sim_t6_2.fq -o t6_out`
 
 -	Each sample produces `t1_out/final.contigs.fa`, which is the fasta file containing assembled genome fragments. 
 
