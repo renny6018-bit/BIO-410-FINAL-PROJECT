@@ -37,19 +37,20 @@ library(Biostrings)
 library(DECIPHER)
 
 **Read in megahit assembly results for each sample.**
-`allcontigs <- c()`  Creates an empty object allcontigs, loops from sample 1 to 6, reads each sample’s `final.contigs.fa`,  and appends all contigs into one big list.
-`allcontigs <- c()`
-`for(i in 1:6){`
-  `contigs <- readDNAStringSet(paste0('C:/Users/sabye/Downloads/t', i, '_out/final.contigs.fa'))`
-  `allcontigs <- c(allcontigs, contigs)}`
+- `allcontigs <- c()`  Creates an empty object allcontigs, loops from sample 1 to 6, reads each sample’s `final.contigs.fa`,  and appends all contigs into one big list.
+- `allcontigs <- c()`
+- `for(i in 1:6){`
+- `contigs <- readDNAStringSet(paste0('C:/Users/sabye/Downloads/t', i, '_out/final.contigs.fa'))`
+- `allcontigs <- c(allcontigs, contigs)}`
   
 **This loop outputs a list, so we flatten the list. The loop creates a list of DNAStringSets.**
 `allcontigs <- do.call(c, allcontigs)`
 
-**There are some small fragments of genomes in the assmebly; we are only going to align the biggest parts (aka the ones that are bigger than 5 kbp; the genome itself is around 18 kbp).**
-`toalign <- allcontigs[which(nchar(allcontigs) > 5000)]`
-`names(toalign) <- 1:length(toalign)`
--	The viral genome is ~18 kb. Small contigs (<5 kb) are junk or assembly fragments, so we keep only the large pieces.
+**There are some small fragments of genomes in the assembly**
+- We are only going to align the biggest parts (aka the ones that are bigger than 5 kbp; the genome itself is around 18 kbp)using the command: 
+- `toalign <- allcontigs[which(nchar(allcontigs) > 5000)]`
+- `names(toalign) <- 1:length(toalign)`
+-	The viral genome is ~18 kb. Small contigs (<5 kb) are junk or assembly fragments, so it keep only the large pieces.
 -	`names(toalign)` gives each sequence a simple numeric name.
 
 **We command `alignment <- AlignSeqs(toalign)`**
