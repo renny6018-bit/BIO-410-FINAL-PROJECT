@@ -32,7 +32,7 @@ This is the reverse reads file for sample t1.
 BiocManager::install("Biostrings")
 BiocManager::install("DECIPHER")
 
-** Load required libraries, so we can use them.**
+**Load required libraries, so we can use them.**
 library(Biostrings)
 library(DECIPHER)
 
@@ -42,10 +42,11 @@ library(DECIPHER)
 `for(i in 1:6){`
   `contigs <- readDNAStringSet(paste0('C:/Users/sabye/Downloads/t', i, '_out/final.contigs.fa'))`
   `allcontigs <- c(allcontigs, contigs)}`
+  
 **This loop outputs a list, so we flatten the list. The loop creates a list of DNAStringSets.**
 `allcontigs <- do.call(c, allcontigs)`
 
-**There are some small fragments of genomes in the assmebly; we are only going to align the #biggest parts (aka the ones that are bigger than 5 kbp; the genome itself is around 18 kbp).**
+**There are some small fragments of genomes in the assmebly; we are only going to align the biggest parts (aka the ones that are bigger than 5 kbp; the genome itself is around 18 kbp).**
 `toalign <- allcontigs[which(nchar(allcontigs) > 5000)]`
 `names(toalign) <- 1:length(toalign)`
 -	The viral genome is ~18 kb. Small contigs (<5 kb) are junk or assembly fragments, so we keep only the large pieces.
