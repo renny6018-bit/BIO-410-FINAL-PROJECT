@@ -5,6 +5,7 @@ The purpose of this project was to create a phylogenetic tree from 6 samples of 
 ## Methodes
 **Raw sequencing reads were saved in the folder `C:/Users/sabye/Downloads/sabyeli/`**
 -  [Uploading sim_t1_1.fq…]()
+  
 **1.The Anaconda/Miniconda program was installed to facilitate the easy installation of bioinformatics tools, specifically MEGAHIT.**
 
 **2.We install the MEGAHIT assembler from the Bioconda channel, which assembles paired-end reads into contigs (pieces of the genome).**
