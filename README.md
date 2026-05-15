@@ -3,7 +3,6 @@
 The data consist of 6 samples from the organism *Zaire ebolavirus*.The organism is a species of viruses in the family *Filoviridae*. (https://eol.org/pages/741151)
 The purpose of this project was to create a phylogenetic tree from 6 samples of Zaire ebolavirus in order to determine the evolutionary relationships between the samples.
 ## Methodes
-[Uploading final_project.html…]
 **1.The Anaconda/Miniconda program was installed to facilitate the easy installation of bioinformatics tools, specifically MEGAHIT.**
 
 **2.We install the MEGAHIT assembler from the Bioconda channel, which assembles paired-end reads into contigs (pieces of the genome).**
