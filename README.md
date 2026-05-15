@@ -50,16 +50,20 @@ library(DECIPHER)
 `names(toalign) <- 1:length(toalign)`
 -	The viral genome is ~18 kb. Small contigs (<5 kb) are junk or assembly fragments, so we keep only the large pieces.
 -	`names(toalign)` gives each sequence a simple numeric name.
+
 **We command `alignment <- AlignSeqs(toalign)`**
 -	This will make DECIPHER align all sequences using progressive alignment. It will compute k-mer distances, cluster similar sequences, align them, and refine the alignment. 
 -	This produces a multiple sequence alignment.
+
 **View the alignment.**
 -	 We command `BrowseSeqs(alignment, htmlFile = 'final_project.html')`
--	This will create an HTML file showing the alignment visually. 
+-	This will create an HTML file showing the alignment visually.
+  
 **Build a Phylogenetic Tree**
 -	We command `tree <- Treeline(alignment, method = 'ML', showPlot = T)`
 -	The program builds a maximum likelihood (ML) phylogenetic tree, tests multiple substitution models (JC69, K80, HKY85, GTR, etc.), picks the best model (T92), optimizes tree likelihood, and plots the final tree.
--	This gives us the evolutionary relationship between our assembled genomes. 
+-	This gives us the evolutionary relationship between our assembled genomes.
+
 **Understanding the model selection output**
 - The selected model was: T92
 Frequency(A) = Frequency(T) = 0.293
