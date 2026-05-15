@@ -9,18 +9,18 @@ Raw paired-end next-generation sequencing (NGS) reads were provided in the form 
 `C:/Users/sabye/Downloads/sabyeli/`
 
 Each sample contains two files: one representing the forward reads (_1.fq) and the other representing the reverse reads (_2.fq).
--[Uploading sim_t1_1.fq…]()
--[Uploading sim_t1_2.fq…]()
--[Uploading sim_t2_1.fq…]()
--[Uploading sim_t2_2.fq…]()
--[Uploading sim_t3_1.fq…]()
+- [Uploading sim_t1_1.fq…]()
+- [Uploading sim_t1_2.fq…]()
+- [Uploading sim_t2_1.fq…]()
+- [Uploading sim_t2_2.fq…]()
+- [Uploading sim_t3_1.fq…]()
 - [Uploading sim_t3_2.fq…]()
 - [Uploading sim_t4_1.fq…]()
 - [Uploading sim_t4_2.fq…]()
 - [Uploading sim_t5_1.fq…]()
 - [Uploading sim_t5_2.fq…]()
 - [Uploading sim_t6_1.fq…]()
--[Uploading sim_t6_2.fq…]()
+- [Uploading sim_t6_2.fq…]()
 
 **1.The Anaconda/Miniconda program was installed to facilitate the easy installation of bioinformatics tools, specifically MEGAHIT.**
 Genome assembly was conducted using MEGAHIT, a de novo assembler that is optimized for large metagenomic datasets. MEGAHIT was installed via Bioconda using Anaconda/Miniconda.
