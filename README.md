@@ -32,13 +32,14 @@ These assembled FASTA files were subsequently used for downstream alignment and 
 
 **2. In R program, the following code was executed:**
 All analyses were conducted in R using the Biostrings and DECIPHER packages. Assembled contigs from each MEGAHIT output folder were imported with the `readDNAStringSet()` function. These contigs were then combined into a single `DNAStringSet` object.
+
 **Biostrings allows R to read DNA sequences from FASTA files, while DECIPHER performs alignment and builds phylogenetic trees. To install these packages:**
-BiocManager::install("Biostrings")
-BiocManager::install("DECIPHER")
+- BiocManager::install("Biostrings")
+- BiocManager::install("DECIPHER")
 
 **Load required libraries, so we can use them.**
-library(Biostrings)
-library(DECIPHER)
+- library(Biostrings)
+- library(DECIPHER)
 
 **Read in megahit assembly results for each sample.**
 - `allcontigs <- c()`  Creates an empty object allcontigs, loops from sample 1 to 6, reads each sample’s `final.contigs.fa`,  and appends all contigs into one big list.
