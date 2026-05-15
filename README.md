@@ -1,6 +1,7 @@
 # BIO-410-FINAL-PROJECT
 ## Background
 The data consist of 6 samples from the organism *Zaire ebolavirus*.The organism is a species of viruses in the family *Filoviridae*. (https://eol.org/pages/741151)
+<img width="477" height="360" alt="ebolavirus" src="https://github.com/user-attachments/assets/4e4ea792-383d-4608-9c34-1afce2e129c7" />
 ## Purpose 
 The purpose of this project was to create a phylogenetic tree from 6 samples of *Zaire ebolavirus* in order to determine the evolutionary relationships between the samples.
 ## Methodes
