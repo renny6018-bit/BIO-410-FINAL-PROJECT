@@ -11,10 +11,6 @@ The purpose of this project was to create a phylogenetic tree from 6 samples of 
 -	To run any commands, we must open WSL and navigate to the folder containing our FASTQ files.
 -	Then we will be given a command `megahit -1 sim_t1_1.fq -2 sim_t1_2.fq -o t1_out.` 
 -	This command will be run 6 times (t1 through t6).
-`-1 sim_t1_1.fq`
-This is the forward reads file for sample t1.
-`-2 sim_t1_2.fq`
-This is the reverse reads file for sample t1.
 -	Paired-end sequencing will produce two files: _1.fq (forward reads) and _2.fq (reverse reads).
 -	Then we will get -o t1_out. This will tell MEGAHIT where to put the assembly results. It will create a folder name `t1_out`.
 `megahit -1 sim_t1_1.fq -2 sim_t1_2.fq -o t1_out`
